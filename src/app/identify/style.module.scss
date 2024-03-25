@@ -14,11 +14,11 @@
 
 .questionDescription {
     min-height: 20%;
-    color: $primary-color;
+    color: linen;
     margin: 5px 0;
     padding: 3px 5px;
     border-radius: 5px;
-    font-size: $font-size-title;
+    font-size: 1.6em;
     font-weight: bold;
 
     &::after {
@@ -27,7 +27,7 @@
         margin: 1em 0 .3em 0;
         height: 1px;
         width: 20%;
-        background-color: $primary-color;
+        background-color: linen;
     }
 }
 

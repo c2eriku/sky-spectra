@@ -1,5 +1,5 @@
 .optionButton {
-    color: $primary-color;
+    color: linen;
     width: 100%;
     background-color: black;
     margin: 3px 0;
@@ -18,12 +18,12 @@
 
     & label {
         display: block;
-        color: $primary-color;
-        font-size: $font-size-content;
+        color: linen;
+        font-size: 1rem;
         text-align: left;
         padding: 3px 0 3px 30px;
         border-radius: 30px;
-        border: 1.5px $primary-color solid;
+        border: 1.5px linen solid;
         width: 100%;
     }
 

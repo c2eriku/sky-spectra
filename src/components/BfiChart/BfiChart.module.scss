@@ -15,8 +15,8 @@
     display: flex;
     align-items: center;
 
-    color: $primary-color;
-    // text-shadow: $primary-color 0 0 1px;
+    color: linen;
+    // text-shadow: linen 0 0 1px;
 
     .unitName {
         width: fit-content;
@@ -34,7 +34,7 @@
             position: absolute;
             width: 100%;
             overflow: hidden;
-            border: $primary-color .1em solid;
+            border: linen .1em solid;
         }
 
         .pillar {
@@ -42,14 +42,14 @@
             height: 1em;
             width: .5em;
             transform: translate(-50%, -50%);
-            background: $primary-color;
+            background: linen;
             border-radius: 10px;
             transition: left 2s ease;
         }
 
         .pillarLinear {
             position: absolute;
-            border: $primary-color .1em solid;
+            border: linen .1em solid;
             z-index: 10;
             transition: width 2s ease;
         }

@@ -6,13 +6,10 @@ import { dirname } from 'path';
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 
-/**
- * @type {import('next').NextConfig}
- */
 const nextConfig = {
     output: 'export',
     reactStrictMode: true,
-    // basePath: '/c2eriku.github.io/sky-spectra',
+    basePath: '/sky-spectra',
     experimental: {
         missingSuspenseWithCSRBailout: false,
     },
