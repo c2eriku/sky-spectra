@@ -7,7 +7,6 @@ import { getIdentityDataset } from "@/lib/IdentityDataset";
 import SquareButton from "@/components/SquareButton/SquareButton";
 import Link from "next/link";
 import { useRouter, useSearchParams } from 'next/navigation';
-import { Suspense } from 'react';
 
 export default function IdentifyResultStaticPage({ identityResult }) {
     const dataset = getIdentityDataset(identityResult);
@@ -51,8 +50,7 @@ export default function IdentifyResultStaticPage({ identityResult }) {
         router.push('https://zh.wikipedia.org/zh-tw/%E4%BA%94%E5%A4%A7%E6%80%A7%E6%A0%BC%E7%89%B9%E8%B4%A8');
     }
 
-    return <Suspense>
-        <main className={`${styles.root} ${styles[identityResult]}`}>
+    return <main className={`${styles.root} ${styles[identityResult]}`}>
         <div className={styles.content}>
             <section >
                 <IdentityCard identityResult={identityResult} identitySet={dataset.skyMapInfo} choices={choices}></IdentityCard>
@@ -83,5 +81,5 @@ export default function IdentifyResultStaticPage({ identityResult }) {
             </div>
 
         </div>
-    </main ></Suspense>
+    </main >
 }

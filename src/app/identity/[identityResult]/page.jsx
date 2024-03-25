@@ -1,4 +1,5 @@
 import IdentifyResultStaticPage from "./IdentityResultStaticPage";
+import { Suspense } from 'react';
 
 export async function generateStaticParams() {
   return [
@@ -11,5 +12,7 @@ export async function generateStaticParams() {
 }
 
 export default function IdentifyResultPage({ params }) {
-  return <IdentifyResultStaticPage identityResult={params.identityResult}></IdentifyResultStaticPage>
+  return <Suspense>
+    <IdentifyResultStaticPage identityResult={params.identityResult}></IdentifyResultStaticPage>
+  </Suspense>
 }
