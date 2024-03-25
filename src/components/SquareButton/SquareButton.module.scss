@@ -1,5 +1,5 @@
 .squareButton {
-    @extend .zoomInOut;
+    @extend .zoomInOut !optional;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -45,7 +45,7 @@
     }
 
     &:hover {
-        @extend .zoomInOut;
+        @extend .zoomInOut !optional;
     }
 }
 

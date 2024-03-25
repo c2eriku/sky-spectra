@@ -20,7 +20,7 @@
     }
 
     &:hover {
-        @extend .zoomInOut;
+        @extend .zoomInOut !optional;
     }
 }
 
