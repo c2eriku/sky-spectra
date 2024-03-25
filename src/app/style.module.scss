@@ -1,0 +1,46 @@
+.wrapper {
+    background: lightgrey;
+}
+
+.upperDrawer {
+    padding: 4em 2em;
+    height: 30%;
+    width: 100%;
+    background: #000000;
+    .title{
+        color: $primary-color;
+        font-size: large;
+        font-weight: bold;
+    }
+    .content{
+        color: $primary-color;
+
+    }
+}
+
+.bgVideo {
+    position: absolute;
+    height: 100%;
+    position: absolute;
+    overflow: hidden;
+    object-fit: cover;
+    opacity: .5;
+}
+
+.cover{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 70%;
+    position: relative;
+
+    &::after {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        box-shadow: 0 50px 10px 0px #000000 inset;
+    }
+}

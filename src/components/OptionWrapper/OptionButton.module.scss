@@ -1,0 +1,41 @@
+.optionButton {
+    color: $primary-color;
+    width: 100%;
+    background-color: black;
+    margin: 3px 0;
+    padding: 2px;
+    border-radius: 30px;
+    opacity: .5;
+
+    &:hover {
+        @extend .zoomInOut;
+    }
+
+    & input[type=radio],
+    & input[type=checkbox] {
+        display: none;
+    }
+
+    & label {
+        display: block;
+        color: $primary-color;
+        font-size: $font-size-content;
+        text-align: left;
+        padding: 3px 0 3px 30px;
+        border-radius: 30px;
+        border: 1.5px $primary-color solid;
+        width: 100%;
+    }
+
+    &:has(input:checked) {
+        @extend .zoomInOut;
+        padding: 0px;
+        opacity: .9;
+
+        box-shadow: 0 0 10px 1px white inset;
+
+        & label {
+            border: 3.5px white solid;
+        }
+    }
+}

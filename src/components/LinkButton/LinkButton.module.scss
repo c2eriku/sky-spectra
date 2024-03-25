@@ -1,0 +1,45 @@
+.linkButton {
+    animation: zoomInOut .8s ease-in-out infinite alternate;
+    position: relative;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px;
+    z-index: 100;
+}
+
+.block {
+    position: relative;
+
+    background: #00000080;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+
+    .play {
+        background: url(../../../public/icons/play.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: block;
+        width: 60%;
+        aspect-ratio: 1/1;
+
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+div.text{
+    text-align: center;
+}
+
+
+@keyframes zoomInOut {
+    from {
+        transform: scale(0.95);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}

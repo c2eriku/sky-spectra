@@ -1,0 +1,59 @@
+.bfiChart {
+    display: flex;
+    flex-direction: column;
+    margin: .3em;
+    padding: .3em;
+    border-radius: 3px;
+    background: #000000A0;
+}
+
+
+.bfiUnit {
+    position: relative;
+    margin: .2em;
+
+    display: flex;
+    align-items: center;
+
+    color: $primary-color;
+    // text-shadow: $primary-color 0 0 1px;
+
+    .unitName {
+        width: fit-content;
+        font-weight: bold;
+        overflow: visible;
+        padding-right: 1em;
+    }
+
+    .chart {
+        flex: 5;
+        position: relative;
+        // transform: translateY(-50%);
+        
+        .linear {
+            position: absolute;
+            width: 100%;
+            overflow: hidden;
+            border: $primary-color .1em solid;
+        }
+
+        .pillar {
+            position: absolute;
+            height: 1em;
+            width: .5em;
+            transform: translate(-50%, -50%);
+            background: $primary-color;
+            border-radius: 10px;
+            transition: left 2s ease;
+        }
+
+        .pillarLinear {
+            position: absolute;
+            border: $primary-color .1em solid;
+            z-index: 10;
+            transition: width 2s ease;
+        }
+    }
+
+
+}

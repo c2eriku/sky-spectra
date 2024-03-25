@@ -1,0 +1,17 @@
+$font-size-title: 1.6em;
+$font-size-content: 1rem;
+$primary-color: linen;
+$bg-color: #00000070;
+
+.zoomInOut{
+    animation: zoomInOut 1.5s infinite alternate;
+}
+
+@keyframes zoomInOut {
+    0% {
+        transform: scale(0.97);
+    }
+    100% {
+        transform: scale(1.03);
+    }
+}

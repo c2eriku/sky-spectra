@@ -1,0 +1,86 @@
+.identityCard {
+    background: $bg-color;
+    background-size: cover;
+    background-position: center;
+    border: $primary-color 1px solid;
+    border-radius: 3px;
+    padding: .5em;
+
+    position: relative;
+    min-width: 100%;
+    min-height: 243px;
+
+    display: flex;
+    flex-direction: column;
+    color: $primary-color;
+    text-shadow: black 0 0 2px;
+
+
+    .wrapper {
+        background: #00000090;
+        padding: .5em;
+    }
+
+    .mapTitle {
+        margin-top: .3em;
+
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .mapIcon {
+            i {
+                display: block;
+                width: 100px;
+                height: 100px;
+            }
+        }
+
+        .mapName {
+
+            :nth-child(1) {
+                font-size: 2em;
+                border-bottom: $primary-color 1px solid;
+            }
+
+            :nth-child(2) {
+                font-size: 1em;
+            }
+        }
+    }
+
+    fieldset {
+        border: 1px solid transparent;
+        border-top-color: $primary-color;
+        border-right-color: $primary-color;
+        padding-left: 0px;
+        margin-right: .5em;
+
+        span {
+            margin: 0 2em 0 1em;
+        }
+    }
+}
+
+
+
+
+.prairie{
+    background-image: url('../../../public/icons/Constellation-prairie-icon-Ray-100.webp');
+}
+
+.forest{
+    background-image: url('../../../public/icons/Constellation-forest-icon-Ray-100.webp');
+}
+
+.valley{
+    background-image: url('../../../public/icons/Constellation-valley-icon-Ray-100.webp');
+}
+
+.wasteland{
+    background-image: url('../../../public/icons/Constellation-wasteland-icon-Ray-100.webp');
+}
+
+.vault{
+    background-image: url('../../../public/icons/Constellation-vault-icon-Ray-100.webp');
+}
